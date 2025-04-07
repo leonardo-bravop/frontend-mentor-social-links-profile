@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Inter";
+    src: url("assets/fonts/Inter-VariableFont.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: oblique -10deg 0deg;
+    font-display: swap;
+}
+
+/* Variable instances */
+.inter-regular-thin {
+    font-variation-settings: "wght" 100, "slnt" 0;
+}
+
+.inter-regular-thin-italic {
+    font-variation-settings: "wght" 100, "slnt" -10;
+}
+
+.inter-regular-extralight {
+    font-variation-settings: "wght" 200, "slnt" 0;
+}
+
+.inter-regular-extralight-italic {
+    font-variation-settings: "wght" 200, "slnt" -10;
+}
+
+.inter-regular-light {
+    font-variation-settings: "wght" 300, "slnt" 0;
+}
+
+.inter-regular-light-italic {
+    font-variation-settings: "wght" 300, "slnt" -10;
+}
+
+.inter-regular-regular {
+    font-variation-settings: "wght" 400, "slnt" 0;
+}
+
+.inter-regular-italic {
+    font-variation-settings: "wght" 400, "slnt" -10;
+}
+
+.inter-regular-medium {
+    font-variation-settings: "wght" 500, "slnt" 0;
+}
+
+.inter-regular-medium-italic {
+    font-variation-settings: "wght" 500, "slnt" -10;
+}
+
+.inter-regular-semibold {
+    font-variation-settings: "wght" 600, "slnt" 0;
+}
+
+.inter-regular-semibold-italic {
+    font-variation-settings: "wght" 600, "slnt" -10;
+}
+
+.inter-regular-bold {
+    font-variation-settings: "wght" 700, "slnt" 0;
+}
+
+.inter-regular-bold-italic {
+    font-variation-settings: "wght" 700, "slnt" -10;
+}
+
+.inter-regular-extrabold {
+    font-variation-settings: "wght" 800, "slnt" 0;
+}
+
+.inter-regular-extrabold-italic {
+    font-variation-settings: "wght" 800, "slnt" -10;
+}
+
+.inter-regular-black {
+    font-variation-settings: "wght" 900, "slnt" 0;
+}
+
+.inter-regular-black-italic {
+    font-variation-settings: "wght" 900, "slnt" -10;
+}

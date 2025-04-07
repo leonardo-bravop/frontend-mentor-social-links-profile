@@ -1,1 +1,50 @@
 @import "tailwindcss";
+@import "./fonts.css";
+
+@theme {
+    --color-green: hsl(75, 94%, 57%);
+    --color-gray-700: hsl(0, 0%, 20%);
+    --color-gray-800: hsl(0, 0%, 12%);
+    --color-gray-900: hsl(0, 0%, 8%);
+
+    --font-inter: "Inter", "sans-serif";
+}
+
+@layer base {
+    body {
+        @apply bg-[#141414];
+    }
+
+    main {
+        @apply h-lvh grid place-content-center;
+    }
+}
+
+.card {
+    @apply bg-[#1F1F1F] w-[327px] sm:w-96 p-10
+        rounded-[12px] flex flex-col gap-6;
+}
+
+.navlink {
+    @apply bg-[#333333] w-full rounded-lg text-center py-3;
+}
+
+.text-preset-1 {
+    @apply font-inter font-medium text-white; 
+    font-size: clamp(20px, 2vw, 24px);
+}
+
+.text-preset-2 {
+    @apply font-inter font-semibold text-green;
+    font-size: clamp(12px, 2vw, 14px);
+}
+
+.text-preset-3 {
+    @apply font-inter font-light text-white;
+    font-size: clamp(12px, 2vw, 14px);
+}
+
+.text-preset-4 {
+    @apply font-inter font-semibold text-white tracking-[0.2px];
+    font-size: clamp(12px, 2vw, 14px);
+}
