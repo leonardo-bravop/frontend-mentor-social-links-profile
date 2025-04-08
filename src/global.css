@@ -26,8 +26,9 @@
 }
 
 .navlink {
-    @apply bg-[#333333] w-full rounded-lg text-center py-3
-        hover:bg-(--color-green) hover:text-black;
+    @apply block bg-[#333333] w-full rounded-lg text-center py-3
+        hover:bg-(--color-green) hover:text-black
+        focus:bg-(--color-green) focus:text-black;
 }
 
 .text-preset-1 {

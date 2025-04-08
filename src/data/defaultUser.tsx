@@ -6,11 +6,26 @@ const defaultData = {
     location: "London, United Kingdom",
     bio: "Front-end developer and avid reader.",
     socialLinks: [
-      "GitHub",
-      "Frontend Mentor",
-      "LinkedIn",
-      "Twitter",
-      "Instagram",
+      {
+        site: "GitHub",
+        href: ""
+      },
+      {
+        site: "Frontend Mentor",
+        href: ""
+      },
+      {
+        site: "LinkedIn",
+        href: ""
+      },
+      {
+        site: "Twitter",
+        href: ""
+      },
+      {
+        site: "Instagram",
+        href: ""
+      }
     ]
   }
   

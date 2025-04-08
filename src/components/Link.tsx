@@ -1,12 +1,20 @@
 interface LinkProps {
-    link: string;
+    site: string;
+    href: string;
     tabIndex: number;
 }
 
-function Link({link, tabIndex}: LinkProps) {
+function Link({site, href, tabIndex}: LinkProps) {
     return (
         <li className="text-preset-4">
-            <button className="navlink cursor-pointer" tabIndex={tabIndex}>{link}</button>
+            <a
+                className="navlink cursor-pointer"
+                tabIndex={tabIndex}
+                href={href}
+                target="_blank"
+            >
+                {site}
+            </a>
         </li>
     )
 }

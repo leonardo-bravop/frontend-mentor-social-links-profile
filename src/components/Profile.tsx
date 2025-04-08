@@ -1,11 +1,16 @@
 import Link from "./Link"
 
+interface SocialLink {
+    site: string;
+    href: string;
+}
+
 interface ProfileProps {
     picture: string;
     name: string;
     location: string;
     bio: string;
-    socialLinks: string[];
+    socialLinks: SocialLink[];
 }
 
 function Profile({picture, name, location, bio, socialLinks}: ProfileProps) {
@@ -22,7 +27,7 @@ function Profile({picture, name, location, bio, socialLinks}: ProfileProps) {
             <span className="text-preset-3">"{bio}"</span>
         </section>
         <ul className="list-none grid gap-4">
-            {socialLinks.map((link, i) => <Link key={i} link={link}/>)}
+            {socialLinks.map((link, i) => <Link key={i} {...link} tabIndex={i + 1}/>)}
         </ul>
     </div>
     )
