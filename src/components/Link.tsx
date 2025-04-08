@@ -1,11 +1,12 @@
 interface LinkProps {
     link: string;
+    tabIndex: number;
 }
 
-function Link({link}: LinkProps) {
+function Link({link, tabIndex}: LinkProps) {
     return (
         <li className="text-preset-4">
-            <button className="navlink cursor-pointer">{link}</button>
+            <button className="navlink cursor-pointer" tabIndex={tabIndex}>{link}</button>
         </li>
     )
 }
