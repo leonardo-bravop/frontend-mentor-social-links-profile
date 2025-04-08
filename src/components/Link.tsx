@@ -3,7 +3,11 @@ interface LinkProps {
 }
 
 function Link({link}: LinkProps) {
-    return (<li className="navlink text-preset-4">{link}</li>)
+    return (
+        <li className="text-preset-4">
+            <button className="navlink cursor-pointer">{link}</button>
+        </li>
+    )
 }
 
 export default Link
