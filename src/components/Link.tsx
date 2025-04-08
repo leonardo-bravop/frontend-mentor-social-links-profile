@@ -1,15 +1,14 @@
 interface LinkProps {
     site: string;
     href: string;
-    tabIndex: number;
 }
 
-function Link({site, href, tabIndex}: LinkProps) {
+function Link({site, href}: LinkProps) {
     return (
         <li className="text-preset-4">
             <a
                 className="navlink cursor-pointer"
-                tabIndex={tabIndex}
+                tabIndex={0}
                 href={href}
                 target="_blank"
             >

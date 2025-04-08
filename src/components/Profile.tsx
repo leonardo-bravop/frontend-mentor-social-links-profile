@@ -27,7 +27,7 @@ function Profile({picture, name, location, bio, socialLinks}: ProfileProps) {
             <span className="text-preset-3">"{bio}"</span>
         </section>
         <ul className="list-none grid gap-4">
-            {socialLinks.map((link, i) => <Link key={i} {...link} tabIndex={i + 1}/>)}
+            {socialLinks.map((link, i) => <Link key={i} {...link}/>)}
         </ul>
     </div>
     )
